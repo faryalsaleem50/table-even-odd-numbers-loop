@@ -63,4 +63,55 @@ const number =5;
 for(let i=1;i <=10; i++){
     console.log(`${number} * ${i} =${number * i}`);
 }
+
+
+
+
+
+assigment chatpter 17 20
+
+   
+   //    question no 1
+    // Declare and initialize an empty multidimensional array (array of arrays)
+
+let multiArray = [];
+
+
+        // question no 2
+// Declare and initialize a multidimensional array representing the matrix
+let matrix = [
+  [0, 1, 2, 3],
+  [1, 0, 1, 2],
+  [2, 1, 0, 1]
+];
+
+// Display the matrix
+console.log("Matrix:", matrix);
+
+
+        //  question no 3
+// Print numeric counting from 1 to 10,
+
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
+    //    question no 4
+// Take table number input from user
+let tableNum = +prompt("Enter a number to show its multiplication table");
+
+// Take table length input from user
+let tableLength = +prompt("Enter length of multiplication table");
+
+// Print the table using for loop
+for (let i = 1; i <= tableLength; i++) {
+  console.log(`${tableNum} x ${i} = ${tableNum * i}`);
+}
+      // question no 5
+      let fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+
+for (let i = 0; i < fruits.length; i++) {
+  console.log("Element at index " + i + " is " + fruits[i]);
+}
+   
  </script>
