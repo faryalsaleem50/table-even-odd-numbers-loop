@@ -117,5 +117,15 @@ for (let i = 1; i <= tableLength; i++) {
 for (let i = 0; i < fruits.length; i++) {
   console.log("Element at index " + i + " is " + fruits[i]);
 }
+
+    pattern printing
+let rows =4;
+for (let i =1; i <=rows; i++){
+  let pattern = '';
+  for (let j = 1; j<= i; j++){
+    pattern += j;
+  }
+  console.log(pattern);
+}
    
  </script>
