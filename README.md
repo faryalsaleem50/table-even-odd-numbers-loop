@@ -78,12 +78,16 @@ let multiArray = [];
 
 
         // question no 2
-// Declare and initialize a multidimensional array representing the matrix
-let matrix = [
-  [0, 1, 2, 3],
-  [1, 0, 1, 2],
-  [2, 1, 0, 1]
+const matrix=[
+[1, 2, 3],
+[4, 5, 6],
+[7, 8, 9],
 ];
+
+for(let i=0; i <matrix.length; i++){ 
+  for(let j=0; j <matrix[i].length;j++) {
+  console.log(`Element at row ${i}, column ${j}: ${matrix[i][j]}`)
+}}
 
 // Display the matrix
 console.log("Matrix:", matrix);
