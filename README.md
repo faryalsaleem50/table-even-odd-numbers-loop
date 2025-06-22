@@ -4,10 +4,10 @@
    //    question no 1
 
 
-//   let studentNames = [];
-// studentNames.push("Ali", "Sara", "Ahmed", "Zara");
+ let studentNames = [];
+   studentNames.push("Ali", "Sara", "Ahmed", "Zara");
 
-// console.log(studentNames); // This will show the array in the console
+console.log(studentNames); // This will show the array in the console
 
         // question no 2
 // let studentNames = new Array();
@@ -127,5 +127,16 @@ for (let i =1; i <=rows; i++){
   }
   console.log(pattern);
 }
+    FIXED NUMBERS
+let num = 5.56789;
+let n = num.toFixed(); AGAR () ME JITNE NUM LIKHOGI UTNI POINT K BD K NUMBEER SHOW KARWAEGA 
+
+document.getElementById("demo").innerHTML = n;
+
+DATE AND TIME
+   Const date =new Date ()
+   console.log (date typeof date)
+ese hi alag alag time month millisecound sab karwa skte or  jo new date hai ise tu pura sab dikhadeta hai 
+   
    
  </script>
