@@ -117,7 +117,7 @@ for (let i = 1; i <= tableLength; i++) {
 for (let i = 0; i < fruits.length; i++) {
   console.log("Element at index " + i + " is " + fruits[i]);
 }
-
+     28 june saturday 
     pattern printing
 let rows =4;
 for (let i =1; i <=rows; i++){
@@ -138,5 +138,56 @@ DATE AND TIME
    console.log (date typeof date)
 ese hi alag alag time month millisecound sab karwa skte or  jo new date hai ise tu pura sab dikhadeta hai 
    
+         29 june  sunday
+   date and time pre built function in (book samarter way  lean javascript)
+    var d = new Date();
+                d.setMonth(11);
+console.log (d)     ese hi sare function pre built h like year month date 
+
+     FUNCTIONS 
+function sum() {
+    let a = 10;
+    let b = 7;
+    let c = 8;
+    let total = a + b + c;
+    console.log(total);
+}
+
+sum(); 
+sum();   YE KARWANA LAZMI HAI JB BHI HUM FUNCTION LIKHEN
+
+   PASSING BACK DATA FROM USER
+function calcTot(merchTot) {
+ var orderTot;
+ if (merchTot >= 100) {
+ orderTot = merchTot;
+ }
+ else if (merchTot < 50.01) {
+ orderTot = merchTot + 5;
+ }
+ else {
+ orderTot = merchTot + 5 + (.03 * (merchTot - 50));
+ }
+ return orderTot;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    
  </script>
