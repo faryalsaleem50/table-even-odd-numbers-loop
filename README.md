@@ -98,7 +98,7 @@ console.log("Matrix:", matrix);
 
 for (let i = 1; i <= 10; i++) {
   console.log(i);
-}
+.
 
     //    question no 4
 // Take table number input from user
@@ -172,7 +172,22 @@ function calcTot(merchTot) {
  }
 
 
+saturday 12 july 2025
+chapter while loop   = for loop ki trha hota hai pr while loop condition pr hi chalta hai agar input n nahi hoga tu chlta rahega 
 
+let input = ''
+while(input !== 'n') {
+    input = prompt('Do you want to continue? y/n')
+    console.log(input)
+}
+chapter do loop   (isme hum phle input lete hn phir phir condition likhty hn)
+   
+let input ;
+   do{
+      input=prompt('want y/n')
+      console.log(input)
+      while(/== 'n')
+            ]
 
 
 
