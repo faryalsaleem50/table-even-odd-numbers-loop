@@ -188,9 +188,41 @@ let input ;
       console.log(input)
       while(/== 'n')
             ]
+chapter 48 49 
 
-
-
+function registerPerson(abc) {        (value lagana taky agar kesi hum khud agy likha wa dikhana chahen)
+    abc.preventDefault();
+    const name = document.getElementById('name').value
+    const age = document.getElementById('age').value
+    const gender = document.getElementById('gender').value
+    const city = document.getElementById('city').value
+   
+    if (name && age && gender) {
+        if (typeof age !== Number) {
+            document.getElementById('ageError').innerText = 'Age must be a number';
+        } else {
+        console.log('Registered...')
+        }
+    } else {
+        console.log('jusxdj', typeof name)
+        alert('All fields are mandatory...')
+    }
+    let country;         (agar hum chahty hn k hum sirf city likhe country khud ajye tu ye lagega)
+    switch(city) {
+        case 'Karachi':
+            country='Pakistan'
+            break
+        case 'London':
+            country="United Kingdom"
+            break
+        case 'NewYork':
+            country='United States of America'
+            break
+        default:
+            country=''
+    }
+    document.getElementById('country').value = country
+}
 
 
 
