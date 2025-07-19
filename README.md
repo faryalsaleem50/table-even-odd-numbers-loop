@@ -223,8 +223,9 @@ function registerPerson(abc) {        (value lagana taky agar kesi hum khud agy 
     }
     document.getElementById('country').value = country
 }
-
-
+saturday html k andr javascript se add karna kuch bh id dekr .inner html me agy forexample<p> tag lga k agy likhdo tu ye text html me dekhega bina html me likhe hwy
+- document.getElementById("one").innerHTML="<p>hello how are you</p>"
+document.getElementById("one").innerHTML+="<ol> fruit vegetable chicken</ol>"
 
 
 
