@@ -289,12 +289,3 @@ function editRow(button) {
     // Remove the current row
     row.remove();
 }
-
-
-
-
-
-
-
-
-   
