@@ -223,12 +223,72 @@ function registerPerson(abc) {        (value lagana taky agar kesi hum khud agy 
     }
     document.getElementById('country').value = country
 }
-saturday html k andr javascript se add karna kuch bh id dekr .inner html me agy forexample<p> tag lga k agy likhdo tu ye text html me dekhega bina html me likhe hwy
+
+      
+      (saturday) html k andr javascript se add karna kuch bh id dekr .inner html me agy forexample<p> tag lga k agy likhdo tu ye text html me dekhega bina html me likhe hwy
 - document.getElementById("one").innerHTML="<p>hello how are you</p>"
 document.getElementById("one").innerHTML+="<ol> fruit vegetable chicken</ol>"
 
+form banaya or jo user ny input dia hai usko table mein show kardia or edit or delete bhi bnaya
 
+    <form id="form" onsubmit="addData(event)">
+        <input type="text" id="name">
+        <input type="text" id="class">
+        <input type="number" id="roll">
+        <input type="submit" id="submit-btn">
+    </form>
+    <br>
+    <br>
+    <table id="table" border="solid">
+        <tr><th>Name</th><th>Class</th><th>Roll Number</th><th>Actions</th></tr>
+    </table>
+    <script src="./script.js"></script>
 
+function addData(event) {
+    event.preventDefault()
+    const name = document.getElementById('name').value                        
+    const className = document.getElementById('class').value
+    const roll = document.getElementById('roll').value    simply form mein se ye table mein ajayega                   
+
+    console.log(name, className, roll)
+    if (name && className && roll) {       agar  3no chezein hai tu hi print ho 
+        const table = document.getElementById('table');
+        const row = table.insertRow();
+       
+        row.innerHTML = `
+            <td>${name}</td>
+            <td>${className}</td>
+            <td>${roll}</td>
+            <td>
+                <button onclick="editRow(this)">Edit</button>      isse edit hoga
+                <button onclick="deleteRow(this)">Delete</button> isse delete hoga 
+            </td>
+        `;
+    }
+   
+    document.getElementById('name').value = ''     isse jb hum submit karxdengy tu upr form me likha te xt hat jayega
+    document.getElementById('class').value = ''
+    document.getElementById('roll').value = ''
+}
+
+function deleteRow(button) {   dlt karna 
+    console.log(button)
+    const row = button.closest('tr');    closet mean tr ka td me se remove 
+    row.remove();
+}
+
+function editRow(button) {
+    const row = button.closest('tr');
+    const cells = row.querySelectorAll('td');
+
+    // Load data back into form
+    document.getElementById('name').value = cells[0].textContent;      lock kardena sb karne k bd 
+    document.getElementById('class').value = cells[1].textContent;
+    document.getElementById('roll').value = cells[2].textContent;
+
+    // Remove the current row
+    row.remove();
+}
 
 
 
@@ -238,4 +298,3 @@ document.getElementById("one").innerHTML+="<ol> fruit vegetable chicken</ol>"
 
 
    
- </script>
