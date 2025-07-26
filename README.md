@@ -289,3 +289,55 @@ function editRow(button) {
     // Remove the current row
     row.remove();
 }
+
+        SATURDAY ARRAY OR IF ELSE PRACTICE
+        <h2>Student Marksheet</h2>
+
+<label>Total Marks: </label>
+<input type="number" id="totalMarks" placeholder="e.g. 500"><br><br>
+
+<label>Obtained Marks: </label>
+<input type="number" id="obtainedMarks" placeholder="e.g. 400"><br><br>
+
+<button onclick="showGrade()">Check Grade</button>
+
+<h3 id="result"></h3>
+
+<script>
+function showGrade() {
+  var total = document.getElementById("totalMarks").value;
+  var obtained = document.getElementById("obtainedMarks").value;
+  
+  var percentage = (obtained / total) * 100;
+  var grade = "";
+
+  if (percentage >= 80) {
+    grade = "A+";
+  } else if (percentage >= 60) {
+    grade = "B";
+  } else if (percentage >= 40) {
+    grade = "C";
+  } else {
+    grade = "Fail";
+  }
+
+  document.getElementById("result").innerText = 
+    "Percentage: " + percentage.toFixed(2) + "% | Grade: " + grade;
+}
+
+  var months = [
+    "January", "February", "March", "April",
+    "May", "June", "July", "August",
+    "September", "October", "November", "December"
+  ];
+
+  for (var i = 0; i < months.length; i++) {
+    console.log(months[i]);
+  }
+
+  // Show alert for September
+  alert(months[8]);
+
+
+
+
