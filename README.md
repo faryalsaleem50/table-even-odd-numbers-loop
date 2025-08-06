@@ -338,6 +338,64 @@ function showGrade() {
   // Show alert for September
   alert(months[8]);
 
+RAMZAN COUNTDOWN 
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramzan Countdown Timer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    #countdown {
+      font-size: 28px;
+      color: #16a085;  
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>⏳ Countdown to Ramzan 2026</h1>
+<div id="countdown">Loading...</div>
+
+<script>
+  const ramzanDate = new Date("Feb 18, 2026 00:00:00").getTime();
+
+  const timer = setInterval(function () {
+    const now = new Date().getTime();
+    const distance = ramzanDate - now;
+
+    if (distance < 0) {
+      document.getElementById("countdown").innerHTML = "🌙 Ramzan Mubarak!";
+      clearInterval(timer);
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML = `
+      📅 <b>${days}</b> Days  
+      ⏰ <b>${hours}</b> Hours  
+      🕑 <b>${minutes}</b> Minutes  
+      ⏱️ <b>${seconds}</b> Seconds
+    `;
+  }, 1000);
+</script>
+
+</body>
+</html>
 
 
 
